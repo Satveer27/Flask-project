@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<link href="{{ url_for('static', filename='index1.css') }}"  type ="text/css" rel = "stylesheet" />
+	<title> GIC Survey </title>
+</head>
+
+<body>
+	<form action="" method="post" role="form">
+	    {{ form.csrf }}
+		<div  style = "position:relative; left:350px; top:180px" class="container">
+		 <div class="form-group">
+		 <center>
+			 
+			 
+			 <center>
+			 <label class= "title">GIC Survey</label>
+			 </center>
+			 <br/>
+			  
+			  
+			 <label class ="GIC">GIC number:</label>
+			 {{ form.GIC() }}
+			 <br />
+			 <br/>
+           
+			
+			<label class = "name" >Name:</label>
+			{{ form.name()}}
+			 <br />
+			 <br/>
+			
+			<label class ="email">Email:</label>
+			{{ form.email() }}
+			<br/>
+			 <br />
+			
+			 
+			
+
+
+            <br />
+			<button type="submit" class="btn btn-success">submit</button>
+		  </center>
+		  </div>
+		</div>
+	</form>
+	 <br />
+
+</html>

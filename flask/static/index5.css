@@ -1,0 +1,12 @@
+label.title{
+color: black; font-size: 300%; line-height: 80px; padding:0 80px; font-weight: bold; font-family:"Garamond";}
+
+body{background-image: url(GIC.jpg)}
+
+.container {
+  border-radius: 150px;
+  background-color: #f2f2f2;
+  width:60%;
+  height: 100px;
+  
+}

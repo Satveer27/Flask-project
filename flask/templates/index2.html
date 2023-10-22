@@ -1,0 +1,56 @@
+<html>
+
+<head>
+	<link href="{{ url_for('static', filename='index3.css') }}"  type ="text/css" rel = "stylesheet" />
+	<title> GIC Survey questions 2 </title>
+</head>
+
+<body>
+	<form action="" method="post" role="form">
+		{{ form.csrf }}
+			<div class="form-group">
+			<div  style = "position:relative; left:350px; top:10px" class="container">
+			<div class="form-group">
+				 <center>
+					 <label class= "title">Questions</label>
+					 </center>
+					 <br/>
+				<center>
+				<label class= "q1">1.)Do you believe you are progressing in programming subject?</label> 
+				</center>
+				<p>
+				{{ form.question() }}
+				</p>
+
+				<center>
+				<label class= "q2">2.)Do you believe you are progressing in math subject?</label> 
+				</center>
+				<p>
+				{{ form.question1() }}
+				</p>
+				
+				<center>
+				<label class= "q3">3.)Do you believe you are progressing in engineering subject?</label> 
+				</center>
+				<p>
+				{{ form.question2() }}
+				</p>
+				
+				<center>
+				<label class= "q4">4.)Do you believe you are progressing in english subject?</label> 
+				</center>
+				<p>
+				{{ form.question3() }}
+				</p>
+			     
+				
+				
+			<br />
+			<center>
+			<button type="submit" class="btn btn-success">submit</button>
+		  </center>
+		  </div>
+		</div>
+	</form>
+	<br>
+

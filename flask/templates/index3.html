@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<link href="{{ url_for('static', filename='index4.css') }}"  type ="text/css" rel = "stylesheet" />
+	<title> GIC Survey question final </title>
+</head>
+
+<body>
+	<form action="" method="post" role="form">
+		{{ form.csrf }}
+			<div class="form-group">
+			<div  style = "position:relative; left:350px; top:10px" class="container">
+			<div class="form-group">
+				 <center>
+					 <label class= "title">Questions</label>
+					 </center>
+					 <br/>
+					 
+					 
+				<center>
+				<label class = "q4">What fun things have you explored in programming subject?</label>
+				<br/>
+				<br/>
+				<br />
+				{{ form.question4() }}
+				<br />
+				<br />
+				<br />
+				<label class = "q5">What fun things have you experienced in GIC?</label>
+				<br/>
+				<br/>
+				<br />
+				{{ form.question5() }}
+				<br/>
+				<br/>
+				<br/>
+				
+				
+				<br />
+			<center>
+			<button type="submit" class="btn btn-success">submit</button>
+		  </center>
+		  </div>
+		</div>
+	</form>
+	

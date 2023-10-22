@@ -1,0 +1,33 @@
+label.title{
+color: black; font-size: 300%; line-height: 80px; padding:0 80px; font-weight: bold; font-family:"Garamond";}
+
+body{background-image: url(GIC.jpg)}
+
+label.accept{
+color: black; font-size: 100%; line-height: 80px; padding:0 80px; font-weight: bold; font-family:"Garamond";}
+
+
+button[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 100px;
+  background-color: #f2f2f2;
+  width:60%;
+  height: 500px;
+}
+
+
+

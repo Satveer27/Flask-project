@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<link href="{{ url_for('static', filename='index2.css') }}"  type ="text/css" rel = "stylesheet" />
+	<title> GIC Survey questions 1 </title>
+</head>
+
+<body>
+	<form action="" method="post" role="form">
+		{{ form.csrf }}
+			<div class="form-group">
+			<div  style = "position:relative; left:350px; top:180px" class="container">
+			<div class="form-group">
+				<center>
+			 
+			 
+					 <center>
+					 <label class= "title">Terms and conditions</label>
+					 </center>
+					 <br/>
+					  
+					  <label>1.) Will you allow your personal information to be used for review purposes?</label>
+					  <br/>
+					  <br/>
+					  <br/>
+					  
+					  
+					  <label>2.) Do you agree to be fully truthful to the survey?</label>
+					  <br/>
+					  <br/>
+					  <br/>
+					  
+					  <label>3.) Do you agree to not use any vulgar language in the survey?</label>
+					  <br/>
+					  <br/>
+					  <br/>
+					  
+					  
+					  <label class="accept">Agree?</label>
+					  {{form.accept()}}
+					  <br />
+					  
+			 <br />
+			<button type="submit" class="btn btn-success">submit</button>
+		  </center>
+		  </div>
+		</div>
+	</form>
+		
+	
